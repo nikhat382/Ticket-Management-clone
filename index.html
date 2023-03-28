@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Jira Ticket Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+
+<body>
+    <!-- tool-box -->
+    <div class="toolbox-cont">
+        <div class="priorityBox-cont darkgray">
+            <div class="color urgentRed"></div>
+            <div class="color gotitYellow"></div>
+            <div class="color taskGreen"></div>
+            <div class="color mayBePerpule "></div>
+            <div class="color allTicket">
+                <h3>All</h3>
+            </div>
+        </div>
+        <div class="actionBox-cont lightcoral">
+            <div class="add-btn"><i class="fa-solid fa-plus"></i></div>
+            <div class="remove-btn"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+    </div>
+    <!-- Main-Container -->
+    <div class="main-cont">
+       
+        <div class="modal-cont">
+            <textarea class="textarea-cont" spellcheck="false"></textarea>
+            <!-- spellcheck = false is used to stop spelling check functionality -->
+            <div class="priority-colors-cont">
+                <div class="priority-color urgentRed"></div>
+                <div class="priority-color gotitYellow"></div>
+                <div class="priority-color taskGreen"></div>
+                <div class="priority-color mayBePerpule activeBox"></div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/shortid-dist@1.0.5/dist/shortid-2.2.13.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
